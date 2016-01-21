@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1234" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tkx-X4-jWO">
+                                <rect key="frame" x="250" y="282.5" width="100" height="35"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="awL-r9-W1t"/>
+                                    <constraint firstAttribute="height" constant="35" id="d2n-0v-Xb8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ffi-vM-Omf" customClass="DRIdentifyCodeView">
+                                <rect key="frame" x="250" y="337.5" width="100" height="35"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.43529411759999997" green="0.45098039220000002" blue="0.47058823529999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="ffi-vM-Omf" firstAttribute="height" secondItem="Tkx-X4-jWO" secondAttribute="height" id="29p-oy-zQP"/>
+                            <constraint firstItem="Tkx-X4-jWO" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="3Oj-ql-UsO"/>
+                            <constraint firstItem="ffi-vM-Omf" firstAttribute="width" secondItem="Tkx-X4-jWO" secondAttribute="width" id="LVJ-nt-kFr"/>
+                            <constraint firstItem="ffi-vM-Omf" firstAttribute="leading" secondItem="Tkx-X4-jWO" secondAttribute="leading" id="e4G-hB-Uaj"/>
+                            <constraint firstItem="ffi-vM-Omf" firstAttribute="trailing" secondItem="Tkx-X4-jWO" secondAttribute="trailing" id="k3y-vy-jtr"/>
+                            <constraint firstItem="ffi-vM-Omf" firstAttribute="top" secondItem="Tkx-X4-jWO" secondAttribute="bottom" constant="20" id="mQy-Vn-D72"/>
+                            <constraint firstItem="Tkx-X4-jWO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="z6a-jg-lA9"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="codeLabel" destination="ffi-vM-Omf" id="pZa-Oc-Zc4"/>
+                        <outlet property="textLabel" destination="Tkx-X4-jWO" id="rr6-Rr-Leo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="269" y="429"/>
+        </scene>
+    </scenes>
+</document>
